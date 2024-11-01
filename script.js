@@ -1,10 +1,14 @@
-const title = "LG";
-const screens = 3;
-const screenPrise = 100;
-const rollback = 10;
-const fullPrise = 110;
-const adaptive = true;
+let title = "DevLab";
+let screens = "Simple, Hard, Interactive";
+const screenPrice = 50;
+let rollback = 10;
+let fullPrice = 150;
+let adaptive = true;
 
-alert(title);
+console.log(typeof title, typeof fullPrice, typeof adaptive);
+console.log(screens.length);
+console.log("Стоимость верстки экранов " + screenPrice + " $");
+console.log("Стоимость верстки сайта " + fullPrice + " $");
 
-console.log(title.length);
+console.log(screens.toLowerCase().split(", "));
+console.log(fullPrice * (rollback / 100) + " $");
