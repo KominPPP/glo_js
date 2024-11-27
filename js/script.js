@@ -9,8 +9,8 @@ const inputRange = document.querySelector(".rollback input");
 const inputRangeValue = document.querySelector(".rollback .range-value");
 
 const startBtn = document.getElementsByClassName("handler_btn")[0];
-const selectValue = document.querySelector("select");
-const inputValue = document.querySelector("input");
+// const selectValue = document.querySelector("select");
+// const inputValue = document.querySelector("input");
 
 const resetBtn = document.getElementsByClassName("handler_btn")[1];
 
@@ -37,7 +37,7 @@ const appData = {
 
   init: function () {
     appData.addTitle();
-    appData.check();
+
     startBtn.addEventListener("click", appData.start);
     buttonPlus.addEventListener("click", appData.addScreenBlock);
   },
